@@ -5,4 +5,6 @@ package com.example.rodry.mvpdemo.Interfaces;
  */
 
 public interface LoginInteractor {
+
+    void ValidateUser(String user, String password, OnLoginFinished listener);
 }

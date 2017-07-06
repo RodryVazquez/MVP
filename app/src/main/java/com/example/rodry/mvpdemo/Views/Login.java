@@ -10,7 +10,9 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 
 import com.example.rodry.mvpdemo.Helpers.ApplicationConstants;
+import com.example.rodry.mvpdemo.Interfaces.LoginPresenter;
 import com.example.rodry.mvpdemo.Interfaces.LoginView;
+import com.example.rodry.mvpdemo.Presenters.LoginPresenterImpl;
 import com.example.rodry.mvpdemo.R;
 
 public class Login extends AppCompatActivity implements LoginView {
@@ -18,6 +20,9 @@ public class Login extends AppCompatActivity implements LoginView {
     private EditText edtUserName, edtPassword;
     private Button btnLogin;
     private ProgressBar progressBar;
+
+    //Presentador
+    private LoginPresenter loginPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +33,9 @@ public class Login extends AppCompatActivity implements LoginView {
         edtPassword = (EditText) findViewById(R.id.edtPassword);
         btnLogin = (Button) findViewById(R.id.btnLogin);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
+        //Inicializamos la implementacion del presenter
+        loginPresenter = new LoginPresenterImpl(this);
     }
 
     @Override
@@ -55,8 +63,17 @@ public class Login extends AppCompatActivity implements LoginView {
         startActivity(Home.class);
     }
 
-    //Inicia cualquier actividad
+    /**
+     * Lanza un Intent
+     * @param activityClass activity target
+     */
     private void startActivity(Class<? extends Activity> activityClass) {
         startActivity(new Intent(this, activityClass));
+    }
+
+    //OnClick del boton, ejecuta el metodo del presenter
+    public void onLogin(View view) {
+        //Le agregamos los parametros de usuario y contraseña
+        this.loginPresenter.ValidateUser(edtUserName.getText().toString(), edtPassword.getText().toString());
     }
 }
