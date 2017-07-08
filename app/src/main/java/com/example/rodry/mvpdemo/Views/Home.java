@@ -3,6 +3,7 @@ package com.example.rodry.mvpdemo.Views;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
@@ -10,7 +11,8 @@ import com.example.rodry.mvpdemo.Interfaces.Home.HomePresenter;
 import com.example.rodry.mvpdemo.Interfaces.Home.HomeView;
 import com.example.rodry.mvpdemo.Presenters.HomePresenterImpl;
 import com.example.rodry.mvpdemo.R;
-import com.example.rodry.mvpdemo.Services.ContactModel;
+import com.example.rodry.mvpdemo.Services.Home.ContactModel;
+import com.example.rodry.mvpdemo.Views.Adapters.HomeAdapter;
 
 import java.util.List;
 
@@ -19,7 +21,7 @@ public class Home extends AppCompatActivity implements HomeView<List<ContactMode
     private ProgressBar homeProgressBar;
     private ListView lstContacts;
     private HomePresenter homePresenter;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +50,7 @@ public class Home extends AppCompatActivity implements HomeView<List<ContactMode
     @Override
     public void Response(List<ContactModel> args) {
         if(args.size() > 0){
-
+            lstContacts.setAdapter(new HomeAdapter(this,args));
         }
     }
 }

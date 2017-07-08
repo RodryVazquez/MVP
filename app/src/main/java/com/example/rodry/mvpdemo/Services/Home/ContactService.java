@@ -1,8 +1,10 @@
-package com.example.rodry.mvpdemo.Services;
+package com.example.rodry.mvpdemo.Services.Home;
 
 import com.example.rodry.mvpdemo.Helpers.ApplicationConstants;
 import com.example.rodry.mvpdemo.Interfaces.CRUD;
+
 import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -11,23 +13,23 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by Rodry on 7/6/2017.
  */
 
-public class ContactService implements CRUD<Call<List<ContactModel>>,ContactModel,Integer> {
+public class ContactService implements CRUD<Call<List<ContactModel>>, ContactModel, Integer> {
 
     private static ContactService instance = null;
     private ContactAPI contactAPI;
     private Retrofit retrofit;
 
-    private ContactService(){
+    private ContactService() {
         retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
                 .baseUrl(ApplicationConstants.URL_GET_CONTACTS).build();
         contactAPI = retrofit.create(ContactAPI.class);
     }
 
-    public static  ContactService getInstance() {
-        if(instance == null){
-            synchronized (ContactService.class){
-                if(instance == null){
+    public static ContactService getInstance() {
+        if (instance == null) {
+            synchronized (ContactService.class) {
+                if (instance == null) {
                     instance = new ContactService();
                 }
             }
