@@ -16,6 +16,7 @@ public class LoginPresenterImpl implements LoginPresenter, OnLoginFinished {
     private LoginInteractor loginInteractor;
 
     //Habilitamos la comunicacion con la View y Interactor
+    //Dependencia
     public LoginPresenterImpl(LoginView loginView) {
         this.loginView = loginView;
         loginInteractor = new LoginInteractorImpl();
@@ -24,6 +25,7 @@ public class LoginPresenterImpl implements LoginPresenter, OnLoginFinished {
     @Override
     public void ValidateUser(String user, String password) {
         loginView.ShowProgress();
+        //Llamamos al metodo del interactor
         loginInteractor.ValidateUser(user,password,this);
     }
 
