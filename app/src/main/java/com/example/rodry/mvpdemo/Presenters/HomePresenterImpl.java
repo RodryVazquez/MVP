@@ -5,7 +5,7 @@ import com.example.rodry.mvpdemo.Interfaces.Home.HomeInteractor;
 import com.example.rodry.mvpdemo.Interfaces.Home.HomePresenter;
 import com.example.rodry.mvpdemo.Interfaces.Home.HomeView;
 import com.example.rodry.mvpdemo.Interfaces.Home.OnFetchDataFinished;
-import com.example.rodry.mvpdemo.Services.ContactModel;
+import com.example.rodry.mvpdemo.Services.Home.ContactModel;
 
 import java.util.List;
 

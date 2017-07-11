@@ -1,4 +1,4 @@
-package com.example.rodry.mvpdemo.Services;
+package com.example.rodry.mvpdemo.Services.Home;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -13,7 +13,8 @@ public class ContactModel implements Parcelable {
     private String Gender;
     private int Age;
 
-    public ContactModel(){}
+    public ContactModel() {
+    }
 
     public ContactModel(int contactId, String name, String gender, int age) {
         ContactId = contactId;
