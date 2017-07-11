@@ -1,4 +1,4 @@
-package com.example.rodry.mvpdemo.Services.Home;
+package com.example.rodry.mvpdemo.Services;
 
 import com.example.rodry.mvpdemo.Helpers.ApplicationConstants;
 import com.example.rodry.mvpdemo.Interfaces.CRUD;
@@ -37,14 +37,15 @@ public class ContactService implements CRUD<Call<List<ContactModel>>, ContactMod
         return instance;
     }
 
+
     @Override
     public Call<List<ContactModel>> GetAll() {
-        return this.contactAPI.getAllContacts();
+        return getInstance().contactAPI.getAllContacts();
     }
 
     @Override
-    public void GetById(Integer args) {
-
+    public ContactModel GetById(Integer args) {
+        return null;
     }
 
     @Override
@@ -58,7 +59,7 @@ public class ContactService implements CRUD<Call<List<ContactModel>>, ContactMod
     }
 
     @Override
-    public void Delete(ContactModel args) {
+    public void Delete(Integer args) {
 
     }
 }

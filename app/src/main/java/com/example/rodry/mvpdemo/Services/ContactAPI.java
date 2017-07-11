@@ -1,4 +1,4 @@
-package com.example.rodry.mvpdemo.Services.Home;
+package com.example.rodry.mvpdemo.Services;
 
 import java.util.List;
 

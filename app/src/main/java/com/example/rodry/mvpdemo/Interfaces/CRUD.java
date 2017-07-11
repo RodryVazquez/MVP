@@ -8,11 +8,11 @@ public interface CRUD<T,O, P> {
 
     T GetAll();
 
-    void GetById(P args);
+    O GetById(P args);
 
     void Create(O args);
 
     void Update(O args);
 
-    void Delete(O args);
+    void Delete(P args);
 }

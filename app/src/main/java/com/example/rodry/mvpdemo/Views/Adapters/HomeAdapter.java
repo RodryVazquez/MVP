@@ -7,12 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.rodry.mvpdemo.R;
-import com.example.rodry.mvpdemo.Services.Home.ContactModel;
+import com.example.rodry.mvpdemo.Services.ContactModel;
 import com.example.rodry.mvpdemo.Views.HomeDetail;
-import com.example.rodry.mvpdemo.Views.Login;
 
 import java.util.List;
 

@@ -11,6 +11,7 @@ import com.example.rodry.mvpdemo.Interfaces.Home.HomeView;
 import com.example.rodry.mvpdemo.Presenters.HomePresenterImpl;
 import com.example.rodry.mvpdemo.R;
 import com.example.rodry.mvpdemo.Services.ContactModel;
+import com.example.rodry.mvpdemo.Views.Adapters.HomeAdapter;
 
 import java.util.List;
 
@@ -45,10 +46,14 @@ public class Home extends AppCompatActivity implements HomeView<List<ContactMode
         this.homePresenter.FetchData();
     }
 
+    //TODO no se si deberia conocer a Contact Model
     @Override
     public void Response(List<ContactModel> args) {
         if(args.size() > 0){
-
+            //TODO esto podria podria popularse usando el Presentador?
+            lstContacts.setAdapter(new HomeAdapter(this,args));
+        }else{
+            //TODO
         }
     }
 }

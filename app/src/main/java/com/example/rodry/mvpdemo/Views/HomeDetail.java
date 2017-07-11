@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.EditText;
 
 import com.example.rodry.mvpdemo.R;
-import com.example.rodry.mvpdemo.Services.Home.ContactModel;
+import com.example.rodry.mvpdemo.Services.ContactModel;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
