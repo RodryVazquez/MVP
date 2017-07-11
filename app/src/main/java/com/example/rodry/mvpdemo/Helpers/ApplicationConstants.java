@@ -1,7 +1,7 @@
 package com.example.rodry.mvpdemo.Helpers;
 
 /**
- * Created by Rodry on 7/5/2017.
+ * Constantes
  */
 
 public class ApplicationConstants {

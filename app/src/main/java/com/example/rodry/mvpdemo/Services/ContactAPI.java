@@ -6,7 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 /**
- * Created by Rodry on 7/7/2017.
+ * Interface Retrofit
  */
 
 public interface ContactAPI {

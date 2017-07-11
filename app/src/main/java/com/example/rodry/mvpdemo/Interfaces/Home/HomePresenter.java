@@ -1,7 +1,7 @@
 package com.example.rodry.mvpdemo.Interfaces.Home;
 
 /**
- * Created by Rodry on 7/7/2017.
+ * Interface para el Presentador de la vista Home
  */
 
 public interface HomePresenter {

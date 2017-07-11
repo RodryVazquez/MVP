@@ -5,7 +5,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 /**
- * Created by Rodry on 7/7/2017.
+ * Base Adapter
  */
 
 public class HomeAdapter extends BaseAdapter {

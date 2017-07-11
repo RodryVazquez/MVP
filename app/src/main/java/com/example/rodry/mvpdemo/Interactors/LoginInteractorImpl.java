@@ -6,7 +6,7 @@ import com.example.rodry.mvpdemo.Interfaces.LoginInteractor;
 import com.example.rodry.mvpdemo.Interfaces.OnLoginFinished;
 
 /**
- * Created by Rodry on 7/5/2017.
+ *  Interactor del Login
  */
 
 public class LoginInteractorImpl implements LoginInteractor {

@@ -10,7 +10,7 @@ import com.example.rodry.mvpdemo.Services.ContactModel;
 import java.util.List;
 
 /**
- * Created by Rodry on 7/7/2017.
+ * Presentador para la vista Home
  */
 
 public class HomePresenterImpl implements HomePresenter, OnFetchDataFinished<List<ContactModel>> {

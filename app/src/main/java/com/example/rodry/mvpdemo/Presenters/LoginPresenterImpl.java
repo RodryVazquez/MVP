@@ -7,11 +7,11 @@ import com.example.rodry.mvpdemo.Interfaces.LoginView;
 import com.example.rodry.mvpdemo.Interfaces.OnLoginFinished;
 
 /**
- * Created by Rodry on 7/5/2017.
+ *  Presentador para vista Login
  */
-
 public class LoginPresenterImpl implements LoginPresenter, OnLoginFinished {
 
+    //Capas
     private LoginView loginView;
     private LoginInteractor loginInteractor;
 

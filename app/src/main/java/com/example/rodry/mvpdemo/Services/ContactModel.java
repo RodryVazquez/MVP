@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by Rodry on 7/7/2017.
+ * POJO Contact Model
  */
 public class ContactModel implements Parcelable {
 

@@ -14,6 +14,9 @@ import com.example.rodry.mvpdemo.Services.ContactModel;
 
 import java.util.List;
 
+/**
+ * Vista Home
+ */
 public class Home extends AppCompatActivity implements HomeView<List<ContactModel>> {
 
     private ProgressBar homeProgressBar;
@@ -49,6 +52,8 @@ public class Home extends AppCompatActivity implements HomeView<List<ContactMode
     public void Response(List<ContactModel> args) {
         if(args.size() > 0){
 
+        }else{
+            //TODO
         }
     }
 }

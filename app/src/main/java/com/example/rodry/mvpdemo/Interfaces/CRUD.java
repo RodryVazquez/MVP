@@ -1,7 +1,7 @@
 package com.example.rodry.mvpdemo.Interfaces;
 
 /**
- * Created by Rodry on 7/6/2017.
+ * CRUD Generico
  */
 
 public interface CRUD<T,O, P> {

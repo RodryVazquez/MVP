@@ -1,7 +1,8 @@
 package com.example.rodry.mvpdemo.Interfaces.Home;
 
 /**
- * Created by Rodry on 7/7/2017.
+ *  Listener para comunicar al Interactor y el Presenter de
+ *  la vista Home
  */
 
 public interface OnFetchDataFinished<T> {

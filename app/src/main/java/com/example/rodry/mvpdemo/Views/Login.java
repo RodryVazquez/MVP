@@ -15,6 +15,9 @@ import com.example.rodry.mvpdemo.Interfaces.LoginView;
 import com.example.rodry.mvpdemo.Presenters.LoginPresenterImpl;
 import com.example.rodry.mvpdemo.R;
 
+/**
+ * Vista Login
+ */
 public class Login extends AppCompatActivity implements LoginView {
 
     private EditText edtUserName, edtPassword;

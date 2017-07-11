@@ -1,7 +1,8 @@
 package com.example.rodry.mvpdemo.Interfaces;
 
 /**
- * Created by Rodry on 7/5/2017.
+ * Listener que comunica al Interactor con el Presenter
+ * de la vista Login
  */
 
 public interface OnLoginFinished {

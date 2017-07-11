@@ -14,7 +14,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * Created by Rodry on 7/7/2017.
+ * Interactor de la vista Home
  */
 
 public class HomeInteractorImpl implements HomeInteractor {

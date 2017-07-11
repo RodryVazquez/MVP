@@ -1,7 +1,7 @@
 package com.example.rodry.mvpdemo.Interfaces;
 
 /**
- * Created by Rodry on 7/5/2017.
+ * Interfaz utilizada por el Interactor de la vista Login
  */
 
 public interface LoginInteractor {

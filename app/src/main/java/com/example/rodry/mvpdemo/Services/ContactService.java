@@ -8,7 +8,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by Rodry on 7/6/2017.
+ * Servicio para todo lo relacionado con Contactos
  */
 
 public class ContactService implements CRUD<Call<List<ContactModel>>,ContactModel,Integer> {

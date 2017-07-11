@@ -6,7 +6,7 @@ import io.realm.Realm;
 import io.realm.RealmConfiguration;
 
 /**
- * Created by Rodry on 7/7/2017.
+ *  Configuracion de Realm
  */
 
 public class RealmApplication extends Application {
